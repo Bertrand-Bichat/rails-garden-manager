@@ -116,3 +116,51 @@ FOREIGN KEY ("garden_id")
   ↳ bin/rails:9
   [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
   ↳ bin/rails:9
+Started GET "/" for 127.0.0.1 at 2020-03-30 14:38:00 +0200
+Processing by GardensController#index as HTML
+  Rendering gardens/index.html.erb within layouts/application
+  [1m[36mGarden Load (0.6ms)[0m  [1m[34mSELECT "gardens".* FROM "gardens"[0m
+  ↳ app/views/gardens/index.html.erb:42
+  Rendered gardens/index.html.erb within layouts/application (3504.3ms)
+  Rendered shared/_navbar.html.erb (0.7ms)
+  Rendered shared/_footer.html.erb (0.2ms)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /home/bertrand/code/Bertrand-Bichat/rails-garden-manager/public/packs
+[Webpacker] Hash: e3128af20ae85497fdaa
+Version: webpack 4.41.2
+Time: 2172ms
+Built at: 03/30/2020 2:38:10 PM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-1a62a4814a25238fb785.js    495 KiB  application  [emitted] [immutable]  application
+js/application-1a62a4814a25238fb785.js.map    622 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-1a62a4814a25238fb785.js js/application-1a62a4814a25238fb785.js.map
+[./app/javascript/packs/application.js] 19 bytes {application} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 472 bytes {application} [built]
+    + 3 hidden modules
+
+Completed 200 OK in 9263ms (Views: 9222.9ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/gardens/new" for 127.0.0.1 at 2020-03-30 14:38:14 +0200
+Processing by GardensController#new as HTML
+  Rendering gardens/new.html.erb within layouts/application
+  Rendered gardens/new.html.erb within layouts/application (2220.4ms)
+  Rendered shared/_navbar.html.erb (3.8ms)
+  Rendered shared/_footer.html.erb (0.3ms)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 2305ms (Views: 2290.4ms | ActiveRecord: 5.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-03-30 14:38:18 +0200
+Processing by GardensController#index as HTML
+  Rendering gardens/index.html.erb within layouts/application
+  [1m[36mGarden Load (0.5ms)[0m  [1m[34mSELECT "gardens".* FROM "gardens"[0m
+  ↳ app/views/gardens/index.html.erb:42
+  Rendered gardens/index.html.erb within layouts/application (13.2ms)
+  Rendered shared/_navbar.html.erb (0.8ms)
+  Rendered shared/_footer.html.erb (0.4ms)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 55ms (Views: 53.5ms | ActiveRecord: 0.5ms)
+
+
